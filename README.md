@@ -11,4 +11,4 @@ import argparse as arg<br>
 import os<br>
 import _thread<br><br>
 
-<img src="">
+<img src="https://github.com/B4l0x/MySQLi-Brute-Force/blob/master/Capturar.PNG?raw=true">
