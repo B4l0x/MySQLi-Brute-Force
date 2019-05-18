@@ -74,7 +74,7 @@ def iniciar():
     exit()
     
 try:
-  con = mysql.connect(host=server, user=user, passwd=ii)
+  con = mysql.connect(host=server, user='root', passwd='teste')
 except mysql.Error as err:
   if Error(errno=1045):
     print("[+] Host recebeu os pacotes")
